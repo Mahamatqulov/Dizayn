@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: #1c3043;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: none;
+  border: 2px solid #007acc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.user-img {
+  max-width: 8rem;
+  width: 100%;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: #d9e9f6;
+  margin-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-logo {
+  max-width: 8rem;
+  width: 100%;
+  height: 8rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.user-name h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #e4eef5;
+}
+
+.user-name p {
+  margin-top: 5px;
+  color: #a09f9f;
+}
+
+.works h3 {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #e1eaef;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 10px;
+}
+
+.work-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.work-card {
+  padding: 40px;
+  background-color: none;
+  border: 2px solid #007acc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work-card h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #e9ebf5;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 15px;
+}
+
+a {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ecf2f9;
+  border: 2px solid #4eb3f6;
+  margin-right: 10px;
+  font-size: 14px;
+  background: #01282f;
+}
+
+a:hover {
+  border: 2px solid #a7dbfd;
+  background-color: #31a3fb;
+  color: #f9f7f7;
+}
+
+a.github {
+  display: flex;
+  align-items: center;
+  background-color: none;
+}
+
+a.vercel {
+  display: flex;
+  align-items: center;
+  background-color: none;
+}
+
+.github-icon {
+  position: relative;
+  right: 5px;
+}
+
+.vercel-img {
+  position: relative;
+  right: 5px;
+}
+
+.content-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+a img {
+  max-width: 28px;
+  border: 1px solid #000203;
+  border-radius: 50%;
+  background-color: #cac8c8;
+}
+
+/* Tablet version */
+
+@media (max-width: 768px) {
+  header.profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .user-img {
+    margin-bottom: 15px;
+  }
+  button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .buttons {
+    text-align: center;
+  }
+}
+
+/* Mobile version */
+
+@media (max-width: 480px) {
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
